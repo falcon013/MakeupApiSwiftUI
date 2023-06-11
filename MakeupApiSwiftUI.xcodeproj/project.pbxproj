@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1198C9234FE0660040CB29 /* MakeupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1198C8234FE0660040CB29 /* MakeupList.swift */; };
 		4CCE9B61234FC815006232BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE9B60234FC815006232BB /* AppDelegate.swift */; };
 		4CCE9B63234FC815006232BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE9B62234FC815006232BB /* SceneDelegate.swift */; };
 		4CCE9B66234FC815006232BB /* MakeupApiSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE9B64234FC815006232BB /* MakeupApiSwiftUI.xcdatamodeld */; };
@@ -16,6 +17,9 @@
 		4CCE9B70234FC81C006232BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCE9B6E234FC81C006232BB /* LaunchScreen.storyboard */; };
 		4CCE9B7B234FC81C006232BB /* MakeupApiSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE9B7A234FC81C006232BB /* MakeupApiSwiftUITests.swift */; };
 		4CCE9B86234FC81C006232BB /* MakeupApiSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE9B85234FC81C006232BB /* MakeupApiSwiftUIUITests.swift */; };
+		4CCE9B98234FD661006232BB /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE9B97234FD661006232BB /* NetworkingManager.swift */; };
+		4CF9F55923556E8900F4BDE8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9F55823556E8900F4BDE8 /* ImageLoader.swift */; };
+		4CF9F55F23565DF600F4BDE8 /* UrlImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9F55E23565DF600F4BDE8 /* UrlImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C1198C8234FE0660040CB29 /* MakeupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupList.swift; sourceTree = "<group>"; };
 		4CCE9B5D234FC815006232BB /* MakeupApiSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeupApiSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCE9B60234FC815006232BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCE9B62234FC815006232BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		4CCE9B81234FC81C006232BB /* MakeupApiSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeupApiSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCE9B85234FC81C006232BB /* MakeupApiSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupApiSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4CCE9B87234FC81C006232BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCE9B97234FD661006232BB /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		4CF9F55823556E8900F4BDE8 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4CF9F55E23565DF600F4BDE8 /* UrlImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,13 @@
 		4CCE9B5F234FC815006232BB /* MakeupApiSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4CCE9B97234FD661006232BB /* NetworkingManager.swift */,
+				4C1198C8234FE0660040CB29 /* MakeupList.swift */,
+				4CF9F55823556E8900F4BDE8 /* ImageLoader.swift */,
+				4CF9F55E23565DF600F4BDE8 /* UrlImage.swift */,
+				4CCE9B67234FC815006232BB /* ContentView.swift */,
 				4CCE9B60234FC815006232BB /* AppDelegate.swift */,
 				4CCE9B62234FC815006232BB /* SceneDelegate.swift */,
-				4CCE9B67234FC815006232BB /* ContentView.swift */,
 				4CCE9B69234FC81C006232BB /* Assets.xcassets */,
 				4CCE9B6E234FC81C006232BB /* LaunchScreen.storyboard */,
 				4CCE9B71234FC81C006232BB /* Info.plist */,
@@ -270,10 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF9F55923556E8900F4BDE8 /* ImageLoader.swift in Sources */,
 				4CCE9B61234FC815006232BB /* AppDelegate.swift in Sources */,
 				4CCE9B63234FC815006232BB /* SceneDelegate.swift in Sources */,
 				4CCE9B68234FC815006232BB /* ContentView.swift in Sources */,
+				4CCE9B98234FD661006232BB /* NetworkingManager.swift in Sources */,
+				4C1198C9234FE0660040CB29 /* MakeupList.swift in Sources */,
 				4CCE9B66234FC815006232BB /* MakeupApiSwiftUI.xcdatamodeld in Sources */,
+				4CF9F55F23565DF600F4BDE8 /* UrlImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +393,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -430,6 +447,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

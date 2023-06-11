@@ -7,12 +7,26 @@
 //
 
 import SwiftUI
+import Combine
+
 
 struct ContentView: View {
+    @ObservedObject var makeupData: NetworkingManager = NetworkingManager()
+ 
     var body: some View {
-        Text("Hello World")
+        
+            List (self.makeupData.makeup) { makeups in
+                
+                UrlImage(url: makeups.image_link)
+                Text (makeups.brand ?? "n/a").font(.title)
+                Text (makeups.name ?? "n/a").font(.subheadline)
+                Spacer()
+                Text (makeups.price ?? "0")
+                    
+            }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
