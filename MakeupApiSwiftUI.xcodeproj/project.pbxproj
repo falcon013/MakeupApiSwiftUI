@@ -57,6 +57,7 @@
 		4CCE9B85234FC81C006232BB /* MakeupApiSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupApiSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4CCE9B87234FC81C006232BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CCE9B97234FD661006232BB /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		4CE4CD662A3651660096A432 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4CF9F55823556E8900F4BDE8 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4CF9F55E23565DF600F4BDE8 /* UrlImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +90,7 @@
 		4CCE9B54234FC815006232BB = {
 			isa = PBXGroup;
 			children = (
+				4CE4CD662A3651660096A432 /* README.md */,
 				4CCE9B5F234FC815006232BB /* MakeupApiSwiftUI */,
 				4CCE9B79234FC81C006232BB /* MakeupApiSwiftUITests */,
 				4CCE9B84234FC81C006232BB /* MakeupApiSwiftUIUITests */,
